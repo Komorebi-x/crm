@@ -52,7 +52,7 @@ public class SaleChanceController extends BaseController {
         String userName = CookieUtil.getCookieValue(request, "userName");
         //设置用户名到营销机会对象
         saleChance.setCreateMan(userName);
-        //调用Service层的添加方法
+        //调用Service层的添加方法/
         saleChanceService.addSaleChance(saleChance);
         return success("营销机会数据添加成功！");
     }
